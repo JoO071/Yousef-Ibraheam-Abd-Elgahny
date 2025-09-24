@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cart</title>
+  </head>
+  <body class="sec">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>i</strong>-Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Products.Html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center imgg">
+                  <img
+                    src="img/iPhone-17-Pro-640x550.jpg"
+                    class="card-img-top"
+                    alt="iPhone 17 Pro Max"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">iPhone 17 Pro Max</h5>
+                    <p class="card-text price">30000</p>
+                    <button class="btn--outline add-to-cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center imgg">
+                  <img
+                    src="img/igor-omilaev-lDWTfYhZ85w-unsplash.jpg"
+                    class="card-img-top"
+                    alt="iPhone 16 Pro Max"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">iPhone 16 Pro Max</h5>
+                    <p class="card-text price">28000</p>
+                    <button class="btn--outline add-to-cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center imgg">
+                  <img
+                    src="img/thai-nguyen-_UOZ4xCnjbg-unsplash.jpg"
+                    class="card-img-top"
+                    alt="iPhone 15 Pro Max"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">iPhone 15 Pro Max</h5>
+                    <p class="card-text price">26000</p>
+                    <button class="btn--outline add-to-cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center imgg">
+                  <img
+                    src="img/igor-omilaev-lDWTfYhZ85w-unsplash.jpg"
+                    class="card-img-top"
+                    alt="iPhone 14 Pro Max"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">iPhone 14 Pro Max</h5>
+                    <p class="card-text price">22000</p>
+                    <button class="btn--outline add-to-cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cart bg-dark text-white p-3 rounded">
+              <h4 class="mb-3 text-danger">My Cart</h4>
+              <ul id="cart-items" class="list-group mb-3"></ul>
+              <h5>
+                Total: <span id="cart-total" class="text-danger">0</span> EGP
+              </h5>
+              <button id="checkout-btn" class="btn--outline mt-3">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get your first Order!</h2>
+            <p class="cta-text">
+              Discover the latest iPhone Pro Max series with powerful
+              performance and elegant design. Don’t miss the chance to order
+              yours today!
+            </p>
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name" class="labell">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="JoO"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button class="btn btn--outline">Sign up now</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
